@@ -1,43 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
+    background-color: #f0f0f0;
+}
+
+.Juego {
+    max-width: 600px;
+    margin: 100px auto;
+    height: 300px;
+    padding: 20px;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Puntuacion {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
     color: #333;
 }
 
-#resultados {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 button {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
     border: none;
     border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
+}
+
+.Opciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.opciones button {
+    margin: 0 10px;
 }
